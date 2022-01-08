@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Frontend Mentor | Time Tracking Dashboard</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Scripts -->
+    <script defer src="./script.js"></script>
+</head>
+
+<body class="bg-neutral-blue-400 font-rubik">
+    <main class="container mx-auto p-4">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
+            <!-- Report Summary -->
+            <section class="md:col-span-1 md:flex md:flex-col">
+                <!-- Upper Div -->
+                <div class="bg-primary-blue-200 rounded-2xl py-4 px-6 flex items-center gap-4  relative z-[1] md:flex-col md:items-start">
+                    <img class="w-16 h-16 border-2 border-white rounded-full" src="./assets/images/image-jeremy.png" alt="">
+                    <div>
+                        <p class="text-neutral-blue-100 text-xs font-light ">Report for</p>
+                        <h1 class="text-white font-light md:text-4xl">Jeremy Robson</h1>
+                    </div>
+                </div>
+
+                <!-- Bottom Div -->
+                <div class="bg-neutral-blue-300 rounded-b-2xl px-6 pt-7 pb-4 -translate-y-3.5 ">
+                    <ul class="text-neutral-blue-100 flex justify-between items-center text-xs font-light md:flex-col md:items-start md:gap-2">
+                        <li class="link link--active hover:text-white" data-type="daily">
+                            <a href="">Daily</a>
+                        </li>
+                        <li class="link hover:text-white" data-type="weekly">
+                            <a href="">Weekly</a>
+                        </li>
+                        <li class="link hover:text-white" data-type="monthly">
+                            <a href="">Monthly</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Cards Container-->
+            <section id='cards-container' class="grid grid-cols-1 gap-4 md:col-span-3 md:grid-cols-3 md:items-center">
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="attribution">
+        Challenge by <a class="attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a class="attribution-link" href="https://github.com/MuhammadM1998" target="_blank">Muhammad Mahmoud</a>.
+    </footer>
+</body>
+
+</html>
